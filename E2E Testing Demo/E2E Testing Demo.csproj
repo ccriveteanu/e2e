@@ -213,6 +213,8 @@
     <Content Include="Test\CasperJSBin\batchbin\phantomcss.js" />
     <Content Include="Test\CasperJSBin\batchbin\resemble.js" />
     <Content Include="Test\CasperJSBin\batchbin\resemblejscontainer.html" />
+    <Content Include="Test\CasperJSBin\batchbin\screenshots\page header_1.png" />
+    <Content Include="Test\CasperJSBin\batchbin\screenshots\row-column_0.png" />
     <Content Include="Test\CasperJSBin\bin\usage.txt" />
     <Content Include="Test\CasperJSBin\batchbin\bootstrap.js" />
     <Content Include="Test\CasperJSBin\modules\casper.js" />
@@ -422,7 +424,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Test\CasperJSBin\batchbin\results\" />
-    <Folder Include="Test\CasperJSBin\batchbin\screenshots\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -48,13 +48,9 @@ phantomcss.init({
 */
 
 casper.test.begin('Go To local website', function(test) {
-    casper.start("http://localhost/e2edemo/", function () {
-        casper.viewport(1024, 768);
+    casper.start("http://localhost/e2edemo/");
 
-
-       
-
-    });
+    casper.viewport(1024, 768);
 
 
     casper.then(function () {
