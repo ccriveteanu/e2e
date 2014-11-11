@@ -377,9 +377,6 @@
     <Content Include="Test\PhantomCSS\libs\phantomjs\third-party.txt" />
     <Content Include="Test\PhantomCSS\libs\resemblejs\resemble.js" />
     <Content Include="Test\PhantomCSS\phantomcss.js" />
-    <Content Include="Test\PhantomCSS\readme_assets\differentcolour.png" />
-    <Content Include="Test\PhantomCSS\readme_assets\false-negative.png" />
-    <Content Include="Test\PhantomCSS\readme_assets\intro-example.png" />
     <Content Include="Test\PhantomCSS\resemblejscontainer.html" />
     <Content Include="Test\PhantomCSS\screenshots\page header_1.png" />
     <Content Include="Test\PhantomCSS\screenshots\row-column_0.png" />
