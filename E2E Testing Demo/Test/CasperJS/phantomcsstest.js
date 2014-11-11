@@ -58,8 +58,8 @@ casper.test.begin('Go To local website', function(test) {
 
 
     casper.then(function () {
-        casper.waitForSelector(".container", function () {
-            phantomcss.screenshot('.container', 'page container');
+        casper.waitForSelector(".testcss", function () {
+            phantomcss.screenshot('.testcss', 'row-column');
         });
     });
 
