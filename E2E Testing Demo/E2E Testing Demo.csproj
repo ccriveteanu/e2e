@@ -359,6 +359,32 @@
     <Content Include="Test\CasperJSBin\tests\testdir\04\02_do.js" />
     <Content Include="Test\CasperJS\phantomcsstest.js" />
     <Content Include="Test\CasperJS\casperjstests.js" />
+    <Content Include="Test\PhantomCSS\.gitignore" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\bin\bootstrap.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\casper.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\cli.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\clientutils.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\colorizer.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\events.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\http.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\mouse.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\pagestack.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\querystring.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\tester.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\utils.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\modules\xunit.js" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\tests\run.js" />
+    <Content Include="Test\PhantomCSS\libs\phantomjs\phantomjs.exe" />
+    <Content Include="Test\PhantomCSS\libs\phantomjs\third-party.txt" />
+    <Content Include="Test\PhantomCSS\libs\resemblejs\resemble.js" />
+    <Content Include="Test\PhantomCSS\phantomcss.js" />
+    <Content Include="Test\PhantomCSS\readme_assets\differentcolour.png" />
+    <Content Include="Test\PhantomCSS\readme_assets\false-negative.png" />
+    <Content Include="Test\PhantomCSS\readme_assets\intro-example.png" />
+    <Content Include="Test\PhantomCSS\resemblejscontainer.html" />
+    <Content Include="Test\PhantomCSS\screenshots\page header_1.png" />
+    <Content Include="Test\PhantomCSS\screenshots\row-column_0.png" />
+    <Content Include="Test\PhantomCSS\tests\phantomcsstest.js" />
     <Content Include="Test\PhantomJSBin\phantomjs.exe" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -420,10 +446,26 @@
     <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\README.md" />
     <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\LICENSE" />
     <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\README.md" />
+    <Content Include="Test\PhantomCSS\.npmignore" />
+    <Content Include="Test\PhantomCSS\casperjs.bat" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\CHANGELOG.md" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\LICENSE.md" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\package.json" />
+    <Content Include="Test\PhantomCSS\libs\casperjs\README.md" />
+    <Content Include="Test\PhantomCSS\libs\phantomjs\ChangeLog" />
+    <Content Include="Test\PhantomCSS\libs\phantomjs\LICENSE.BSD" />
+    <Content Include="Test\PhantomCSS\libs\phantomjs\README.md" />
+    <Content Include="Test\PhantomCSS\libs\resemblejs\LICENSE" />
+    <Content Include="Test\PhantomCSS\libs\resemblejs\README.md" />
+    <Content Include="Test\PhantomCSS\LICENSE" />
+    <Content Include="Test\PhantomCSS\package.json" />
+    <Content Include="Test\PhantomCSS\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Test\CasperJSBin\batchbin\results\" />
+    <Folder Include="Test\PhantomCSS\failures\" />
+    <Folder Include="Test\PhantomCSS\results\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -180,3 +180,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/E2E Testing Demo/bin
