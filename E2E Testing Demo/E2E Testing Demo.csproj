@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F33BACB-FAEE-449B-B8DA-D466DD360E85}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E2E_Testing_Demo</RootNamespace>
+    <AssemblyName>E2E Testing Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\localpublish.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Test\CasperJSBin\batchbin\failures\nojs.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\bin\bootstrap.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\casper.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\cli.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\clientutils.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\colorizer.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\events.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\http.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\mouse.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\pagestack.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\querystring.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\tester.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\utils.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\xunit.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\tests\run.js" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\phantomjs.exe" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\third-party.txt" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\resemble.js" />
+    <Content Include="Test\CasperJSBin\batchbin\phantomcss.js" />
+    <Content Include="Test\CasperJSBin\batchbin\resemble.js" />
+    <Content Include="Test\CasperJSBin\batchbin\resemblejscontainer.html" />
+    <Content Include="Test\CasperJSBin\batchbin\screenshots\open coffee machine button_0.png" />
+    <Content Include="Test\CasperJSBin\bin\usage.txt" />
+    <Content Include="Test\CasperJSBin\batchbin\bootstrap.js" />
+    <Content Include="Test\CasperJSBin\modules\casper.js" />
+    <Content Include="Test\CasperJSBin\modules\cli.js" />
+    <Content Include="Test\CasperJSBin\modules\clientutils.js" />
+    <Content Include="Test\CasperJSBin\modules\colorizer.js" />
+    <Content Include="Test\CasperJSBin\modules\events.js" />
+    <Content Include="Test\CasperJSBin\modules\http.js" />
+    <Content Include="Test\CasperJSBin\modules\mouse.js" />
+    <Content Include="Test\CasperJSBin\modules\pagestack.js" />
+    <Content Include="Test\CasperJSBin\modules\querystring.js" />
+    <Content Include="Test\CasperJSBin\modules\tester.js" />
+    <Content Include="Test\CasperJSBin\modules\utils.js" />
+    <Content Include="Test\CasperJSBin\modules\xunit.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\error\syntax.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\fail-fast\manual-abort\index.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\fail-fast\standard\test1.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\fail-fast\standard\test2.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\fail-fast\standard\test3.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\mod.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\node_modules\bar.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\node_modules\baz\baz.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\node_modules\foo\index.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\sub\mod.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_coffee.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_node_json.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_node_mod.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_node_mod_index.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_node_mod_json_package.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\test_patched_require.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\runtests.py" />
+    <Content Include="Test\CasperJSBin\tests\clitests\scripts\script.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\casper-instance-override.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\dubious.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\exit.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\failing.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\mytest.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\passing.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\skipped.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\step_throws.js" />
+    <Content Include="Test\CasperJSBin\tests\clitests\tester\waitFor_timeout.js" />
+    <Content Include="Test\CasperJSBin\tests\run.js" />
+    <Content Include="Test\CasperJSBin\tests\sample_modules\jsmodule.js" />
+    <Content Include="Test\CasperJSBin\tests\selftest.js" />
+    <Content Include="Test\CasperJSBin\tests\site\alert.html" />
+    <Content Include="Test\CasperJSBin\tests\site\callback.html" />
+    <Content Include="Test\CasperJSBin\tests\site\click.html" />
+    <Content Include="Test\CasperJSBin\tests\site\confirm.html" />
+    <Content Include="Test\CasperJSBin\tests\site\dummy.js" />
+    <Content Include="Test\CasperJSBin\tests\site\elementattribute.html" />
+    <Content Include="Test\CasperJSBin\tests\site\error.html" />
+    <Content Include="Test\CasperJSBin\tests\site\field-array.html" />
+    <Content Include="Test\CasperJSBin\tests\site\form.html" />
+    <Content Include="Test\CasperJSBin\tests\site\frame1.html" />
+    <Content Include="Test\CasperJSBin\tests\site\frame2.html" />
+    <Content Include="Test\CasperJSBin\tests\site\frame3.html" />
+    <Content Include="Test\CasperJSBin\tests\site\frames.html" />
+    <Content Include="Test\CasperJSBin\tests\site\global.html" />
+    <Content Include="Test\CasperJSBin\tests\site\images\phantom.png" />
+    <Content Include="Test\CasperJSBin\tests\site\includes\include1.js" />
+    <Content Include="Test\CasperJSBin\tests\site\includes\include2.js" />
+    <Content Include="Test\CasperJSBin\tests\site\index.html" />
+    <Content Include="Test\CasperJSBin\tests\site\mouse-events.html" />
+    <Content Include="Test\CasperJSBin\tests\site\multiple-forms.html" />
+    <Content Include="Test\CasperJSBin\tests\site\page1.html" />
+    <Content Include="Test\CasperJSBin\tests\site\page2.html" />
+    <Content Include="Test\CasperJSBin\tests\site\page3.html" />
+    <Content Include="Test\CasperJSBin\tests\site\popup.html" />
+    <Content Include="Test\CasperJSBin\tests\site\prompt.html" />
+    <Content Include="Test\CasperJSBin\tests\site\resources.html" />
+    <Content Include="Test\CasperJSBin\tests\site\result.html" />
+    <Content Include="Test\CasperJSBin\tests\site\test.html" />
+    <Content Include="Test\CasperJSBin\tests\site\urls.html" />
+    <Content Include="Test\CasperJSBin\tests\site\visible.html" />
+    <Content Include="Test\CasperJSBin\tests\site\waitFor.html" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\agent.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\alert.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\auth.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\bypass.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\callback.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\callutils.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\capture.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\click.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\confirm.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\content.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\debug.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\elementattribute.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\encode.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\evaluate.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\events.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\exists.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\fetchtext.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\formfill.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\frames.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\global.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\headers.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\history.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\hooks.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\keys.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\location.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\logging.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\mouseevents.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\navigation.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\onerror.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\open.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\popup.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\prompt.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\request.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\resources.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\scripts.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\scroll.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\start.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\steps.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\urls.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\viewport.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\visible.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\wait.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\xpath.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\cli.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\clientutils.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\fs.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\http_status.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\pagestack.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\require.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\assert.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\begin-config.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\setup-teardown-async.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\setup-teardown.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\skip.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\test-order.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\testcase.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\testsuite.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\utils.js" />
+    <Content Include="Test\CasperJSBin\tests\suites\xunit.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\01_a\abc.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\01_a\def.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\02_b\abc.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\03_a.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\03_b.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\04\01_init.js" />
+    <Content Include="Test\CasperJSBin\tests\testdir\04\02_do.js" />
+    <Content Include="Test\CasperJS\phantomcsstest.js" />
+    <Content Include="Test\CasperJS\casperjstests.js" />
+    <Content Include="Test\PhantomJSBin\phantomjs.exe" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Test\CasperJSBin\batchbin\casperjs.bat" />
+    <Content Include="Test\CasperJSBin\package.json" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\node_modules\baz\package.json" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\node_modules\json.json" />
+    <Content Include="Test\CasperJSBin\tests\clitests\modules\sub\coffeemod.coffee" />
+    <Content Include="Test\CasperJSBin\tests\sample_modules\config.json" />
+    <Content Include="Test\CasperJSBin\tests\sample_modules\csmodule.coffee" />
+    <Content Include="Test\CasperJSBin\tests\suites\.casper" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\.casper" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\flow.coffee" />
+    <Content Include="Test\CasperJSBin\tests\suites\casper\request.coffee" />
+    <Content Include="Test\CasperJSBin\tests\suites\coffee.coffee" />
+    <Content Include="Test\CasperJSBin\tests\suites\tester\.casper" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\CHANGELOG.md" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\LICENSE.md" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\package.json" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\README.md" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\ChangeLog" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\LICENSE.BSD" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\README.md" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\LICENSE" />
+    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Test\CasperJSBin\batchbin\results\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64067</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64067/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
