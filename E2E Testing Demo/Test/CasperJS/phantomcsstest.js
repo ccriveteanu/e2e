@@ -55,13 +55,13 @@ casper.test.begin('Go To local website', function(test) {
 
     casper.then(function () {
         casper.waitForSelector(".testcss", function () {
-            phantomcss.screenshot('.testcss', 'row-column');
+            phantomcss.screenshot('.testcss', 2000, '', 'row-column');
         });
     });
 
     casper.then(function () {
         casper.waitForSelector(".jumbotron", function () {
-            phantomcss.screenshot('.jumbotron', 'page header');
+            phantomcss.screenshot('.jumbotron', 2000, '', 'page header');
         });
     });
 
