@@ -359,7 +359,6 @@
     <Content Include="Test\CasperJSBin\tests\testdir\04\02_do.js" />
     <Content Include="Test\CasperJS\phantomcsstest.js" />
     <Content Include="Test\CasperJS\casperjstests.js" />
-    <Content Include="Test\PhantomCSS\.gitignore" />
     <Content Include="Test\PhantomCSS\libs\casperjs\bin\bootstrap.js" />
     <Content Include="Test\PhantomCSS\libs\casperjs\modules\casper.js" />
     <Content Include="Test\PhantomCSS\libs\casperjs\modules\cli.js" />
@@ -446,7 +445,6 @@
     <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\README.md" />
     <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\LICENSE" />
     <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\README.md" />
-    <Content Include="Test\PhantomCSS\.npmignore" />
     <Content Include="Test\PhantomCSS\casperjs.bat" />
     <Content Include="Test\PhantomCSS\libs\casperjs\CHANGELOG.md" />
     <Content Include="Test\PhantomCSS\libs\casperjs\LICENSE.md" />
