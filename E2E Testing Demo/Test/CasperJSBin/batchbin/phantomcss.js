@@ -364,6 +364,8 @@ function compareFiles(baseFile, file) {
 								failFile = _failures + fs.separator + file.split(/\/|\\/g).pop().replace('.diff.png', '').replace('.png', '');
 								safeFileName = failFile;
 								increment = 0;
+								console.log("----------------------FAIL FILE------------------------------");
+								console.log(safeFileName);
 
 								while ( fs.isFile(safeFileName+'.fail.png') ){
 									increment++;
