@@ -52,10 +52,21 @@ casper.test.begin('Go To local website', function(test) {
         casper.viewport(1024, 768);
 
 
-        casper.waitForSelector(".jumbotron", function () {
-            phantomcss.screenshot('.jumbotron', 'open coffee machine button');
-        });
+       
 
+    });
+
+
+    casper.then(function () {
+        casper.waitForSelector(".container", function () {
+            phantomcss.screenshot('.container', 'page container');
+        });
+    });
+
+    casper.then(function () {
+        casper.waitForSelector(".jumbotron", function () {
+            phantomcss.screenshot('.jumbotron', 'page header');
+        });
     });
 
     casper.then(function now_check_the_screenshots() {

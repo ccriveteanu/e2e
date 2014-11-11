@@ -213,7 +213,8 @@
     <Content Include="Test\CasperJSBin\batchbin\phantomcss.js" />
     <Content Include="Test\CasperJSBin\batchbin\resemble.js" />
     <Content Include="Test\CasperJSBin\batchbin\resemblejscontainer.html" />
-    <Content Include="Test\CasperJSBin\batchbin\screenshots\open coffee machine button_0.png" />
+    <Content Include="Test\CasperJSBin\batchbin\screenshots\page container_0.png" />
+    <Content Include="Test\CasperJSBin\batchbin\screenshots\page header_1.png" />
     <Content Include="Test\CasperJSBin\bin\usage.txt" />
     <Content Include="Test\CasperJSBin\batchbin\bootstrap.js" />
     <Content Include="Test\CasperJSBin\modules\casper.js" />
