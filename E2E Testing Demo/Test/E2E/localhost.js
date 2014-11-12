@@ -1,5 +1,5 @@
 ﻿
-casper.test.begin('Go To localhost without Wait', function suite(test) {
+casper.test.begin('Go To localhost', function suite(test) {
     casper.start("http://localhost/e2edemo", function () {
         casper.waitForSelector("div[class=jumbotron]", function () {
             test.assertTitle("Home Page - My ASP.NET Application", "Login Title is OK!");
