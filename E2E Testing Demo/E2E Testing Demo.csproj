@@ -192,29 +192,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Test\CasperJSBin\batchbin\failures\nojs.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\bin\bootstrap.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\casper.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\cli.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\clientutils.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\colorizer.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\events.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\http.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\mouse.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\pagestack.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\querystring.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\tester.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\utils.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\modules\xunit.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\tests\run.js" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\phantomjs.exe" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\third-party.txt" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\resemble.js" />
-    <Content Include="Test\CasperJSBin\batchbin\phantomcss.js" />
-    <Content Include="Test\CasperJSBin\batchbin\resemble.js" />
-    <Content Include="Test\CasperJSBin\batchbin\resemblejscontainer.html" />
-    <Content Include="Test\CasperJSBin\batchbin\screenshots\page header_1.png" />
-    <Content Include="Test\CasperJSBin\batchbin\screenshots\row-column_0.png" />
     <Content Include="Test\CasperJSBin\bin\usage.txt" />
     <Content Include="Test\CasperJSBin\batchbin\bootstrap.js" />
     <Content Include="Test\CasperJSBin\modules\casper.js" />
@@ -433,15 +410,6 @@
     <Content Include="Test\CasperJSBin\tests\suites\casper\request.coffee" />
     <Content Include="Test\CasperJSBin\tests\suites\coffee.coffee" />
     <Content Include="Test\CasperJSBin\tests\suites\tester\.casper" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\CHANGELOG.md" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\LICENSE.md" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\package.json" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\casperjs\README.md" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\ChangeLog" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\LICENSE.BSD" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\phantomjs\README.md" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\LICENSE" />
-    <Content Include="Test\CasperJSBin\batchbin\libs\resemblejs\README.md" />
     <Content Include="Test\PhantomCSS\casperjs.bat" />
     <Content Include="Test\PhantomCSS\libs\casperjs\CHANGELOG.md" />
     <Content Include="Test\PhantomCSS\libs\casperjs\LICENSE.md" />
@@ -458,7 +426,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Test\CasperJSBin\batchbin\results\" />
     <Folder Include="Test\PhantomCSS\failures\" />
     <Folder Include="Test\PhantomCSS\results\" />
   </ItemGroup>
